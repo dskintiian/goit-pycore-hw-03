@@ -5,7 +5,7 @@ import re
 
 
 def normalize_phone(phone_number: str) -> str:
-    phone_number = re.sub(r"[^\+\d]*", "", phone_number)
+    phone_number = re.sub(r"[^+\d]*", "", phone_number)
 
     if phone_number.startswith("+"):
         return phone_number
